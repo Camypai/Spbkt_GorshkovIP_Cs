@@ -23,9 +23,9 @@ namespace Spbkt_GorshkovIP_Cs.Labs
         
         private static void Init()
         {
-            var str = Menu.Question("Введите предложение").MyOwnSplit(' ').ToList();
+            var str = Menu.Question("Введите предложение").ToLower().MyOwnSplit(' ').ToList();
 
-            var result = str.Where(q => q.ToLower().First() == q.ToLower().Last());
+            var result = str.Where(q => q.First() == q.Last());
             
             Menu.Print($"Слова, у которых первая и последняя буквы совпадают: {string.Join(", ", result)}");
             

@@ -44,10 +44,10 @@ namespace Spbkt_GorshkovIP_Cs.Labs
             switch (comparer)
             {
                 case 1:
-                    Menu.Print("Точка 1 ближе к началу координат");
+                    Menu.Print("Точка 2 ближе к началу координат");
                     break;
                 case -1:
-                    Menu.Print("Точка 2 ближе к началу координат");
+                    Menu.Print("Точка 1 ближе к началу координат");
                     break;
                 default:
                     Menu.Print("Точки равноудалены от начала координат");

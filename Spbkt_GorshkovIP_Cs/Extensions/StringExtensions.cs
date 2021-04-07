@@ -19,6 +19,8 @@ namespace Spbkt_GorshkovIP_Cs.Extensions
                 result.Add(str.Substring(lastSeparateIndex, i-lastSeparateIndex).Trim());
                 lastSeparateIndex = i;
             }
+            
+            result.Add(str.Substring(lastSeparateIndex).Trim());
 
             return result;
         }

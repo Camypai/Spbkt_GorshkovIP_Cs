@@ -40,7 +40,7 @@ namespace Spbkt_GorshkovIP_Cs.Labs
             arr.FillRand(-9, 9);
 
             var result = arr.FindMin();
-            
+            Menu.Print(arr.Show());
             Menu.Print($"Минимальное значение в матрице {arr.GetLength(0)}x{arr.GetLength(1)} равно {result}");
             
             Menu.Pause();
